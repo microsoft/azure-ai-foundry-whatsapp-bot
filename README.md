@@ -8,7 +8,7 @@ This GitHub repository walk you through creating a WhatsApp Bot built with Azure
 ![Architecture](img/architecture.png)
 
  - A user gets a voice message. He/She then forwards the message to the WhatsApp Business number. 
- - WhatsApp Business app gets the message and sends it to the Azure Functions using Webhook.
+ - WhatsApp Business app gets the message and sends it to the Azure Functions using a Webhook.
  - Azure Functions gets the message. If is is a voice messsage, then call `client.audio.transcriptions.create` Python API to invoke Azure OpenAI Whsiper model, deployed in Azure AI Foundry.
  - Transcribed text is returned from Azure OpenAI Whsiper model to Azure Function, and from the to the WhatsApp Business app.
 
