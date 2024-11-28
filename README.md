@@ -1,7 +1,7 @@
 # Azure AI Foundry Whatsapp Bot
 
 ## Overview 
-This GitHub repository walks you through creating a WhatsApp Bot built with Azure Functions and Azure AI Foundry with Azure OpenAI Whisper model, using Python.
+This GitHub repository walks you through creating a WhatsApp Bot built with Azure Functions, Azure AI Foundry and Azure OpenAI Whisper model, using Python.
 
 ## Architecture
 
