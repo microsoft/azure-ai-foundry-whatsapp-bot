@@ -21,5 +21,6 @@ This GitHub repository walks you through creating a WhatsApp Bot built with Azur
 
 
 ## Instructions
-- Quickstart: Create a Python function in Azure from the command line - refer to [Documentation](https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-cli-python)
+
+Referr to the Build a WhatsApp Transcription Bot with Azure Functions, Azure AI Foundry and Azure OpenAI Whisper model: A Step-by-Step Guide [Blog Post on Medium](https://medium.com/@eitansela/build-a-whatsapp-transcription-bot-with-azure-functions-azure-ai-foundry-and-azure-openai-whisper-8617bbaae821)
 
