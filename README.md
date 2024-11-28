@@ -16,6 +16,7 @@ This GitHub repository walks you through creating a WhatsApp Bot built with Azur
 
  - Azure Subscription with permissions to create the following Azure resources: Resource Groups, Storage Accounts, Function Apps, and AI Foundry (formerly named AI Studio).
  - A Meta for Developers account — If you don’t have one, you can create a Meta for Developers account [here](https://developers.facebook.com/).
+ - Familiarity with Azure and the Azure Portal.
  - Basic Python knowledge is required to follow this tutorial.
 
 
