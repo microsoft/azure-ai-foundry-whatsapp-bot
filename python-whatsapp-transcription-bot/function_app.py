@@ -9,7 +9,7 @@ app = func.FunctionApp()
 
 @app.route(route="WhatsAppTranscriptionBot", auth_level=func.AuthLevel.ANONYMOUS)
 def WhatsAppTranscriptionBot(req: func.HttpRequest) -> func.HttpResponse:
-    logging.info('Python HTTP trigger function processed a request - 1')
+    logging.info('Python HTTP trigger function processed a request')
 
     logging.info(f"req.method: {req.method}")
 
