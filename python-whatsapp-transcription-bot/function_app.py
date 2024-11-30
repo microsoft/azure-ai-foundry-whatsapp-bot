@@ -140,14 +140,14 @@ def process_whatsapp_message(body):
         message_body = message["text"]["body"]
         logging.info(f"message_body: {message_body}")
         text = "Hi, I am Dave the Bot. I can help you transcribe WhatsApp voice messages using AI. Just forward me the message" 
-        data = get_text_message_input(os.environ["RECIPIENT_WAID"], text)
+        data = get_text_message_input(wa_id, text)
         send_message(data)
     elif "audio" in message:
         logging.info(f"Message Type: AUDIO")
         media_id = message["audio"]["id"]
         logging.info(f"media_id: {media_id}")
         text = "Transcribing the message. Will return shortly with the transacription"
-        data = get_text_message_input(os.environ["RECIPIENT_WAID"], text)
+        data = get_text_message_input(wa_id, text)
         send_message(data)
         handle_voice_message(media_id)
     else:
