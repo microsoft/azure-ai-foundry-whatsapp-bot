@@ -149,7 +149,7 @@ def process_whatsapp_message(body):
         text = "Transcribing the message. Will return shortly with the transacription"
         data = get_text_message_input(wa_id, text)
         send_message(data)
-        handle_voice_message(media_id)
+        handle_voice_message(media_id, wa_id)
     else:
         logging.error(f"Unknown Message Type")
 
@@ -240,7 +240,7 @@ def send_get_request_to_graph_facebook(url, headers):
         return(response)
 
 
-def handle_voice_message(media_id):
+def handle_voice_message(media_id, wa_id):
     logging.info("handle_voice_message - Start")
 
     ## Retrieve Media URL
@@ -271,7 +271,7 @@ def handle_voice_message(media_id):
     logging.info(f"File saved - {local_file_name}")
     transcribed_text = transcribe_file(local_file_name)
     if transcribed_text:
-        data = get_text_message_input(os.environ["RECIPIENT_WAID"], "*Transcribed by AI*\n" + transcribed_text)
+        data = get_text_message_input(wa_id, "*Transcribed by AI*\n" + transcribed_text)
         send_message(data)
     
 
